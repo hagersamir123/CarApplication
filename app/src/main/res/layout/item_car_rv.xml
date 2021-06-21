@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/car_item_background"
+    android:layout_marginBottom="16dp"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/low_in_stack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/brand" />
+
+
+    <ImageView
+        android:id="@+id/car_img"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/low_in_stack"
+        android:background="@drawable/car_item_background"
+        tools:src="@drawable/car_image" />
+
+    <TextView
+        android:id="@+id/car_brand"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:maxLines="2"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/car_img"
+        app:layout_constraintTop_toTopOf="@id/car_img"
+        tools:text="@string/brand" />
+
+
+    <TextView
+        android:id="@+id/is_used"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="12dp"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/car_brand"
+        app:layout_constraintStart_toEndOf="@+id/car_img"
+        tools:text="@string/isUsed" />
+
+    <TextView
+        android:id="@+id/car_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="12dp"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/is_used"
+        app:layout_constraintStart_toEndOf="@+id/car_img"
+        tools:text="@string/year" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
